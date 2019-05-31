@@ -12,10 +12,29 @@
 }
 
 html,
-body {
+body,
+#app,
+.com {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
+.main {
+  width: 1400px;
+  height: calc(100vh - 40px);
+  padding: 10px;
+  margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  appearance: none;
+  display: block;
+  resize: none;
+}
 </style>

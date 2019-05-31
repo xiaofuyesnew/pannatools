@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Makecode from './views/Makecode.vue'
 
 Vue.use(Router)
 
@@ -17,7 +18,7 @@ export default new Router({
     {
       path: '/makecode',
       name: 'makecode',
-      component: () => import('./views/Makecode.vue'),
+      component: Makecode,
       meta: {
         title: '推文代码生成'
       }
