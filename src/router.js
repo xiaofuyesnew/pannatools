@@ -9,15 +9,18 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        title: '首页'
+      }
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/makecode',
+      name: 'makecode',
+      component: () => import('./views/Makecode.vue'),
+      meta: {
+        title: '推文代码生成'
+      }
     }
   ]
 })
